@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dp" >
+
+    <CheckBox
+        android:id="@+id/favoris"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:width="50dp"
+        android:button="@drawable/checkbox_selector"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/favoris"
+        android:paddingBottom="3dp"
+        android:text="Station Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:text="3"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/bikes_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/bikes"
+        android:paddingLeft="3dp"
+        android:text="places"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/bikes_label"
+        android:paddingLeft="15dp"
+        android:text="15"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/free_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/free"
+        android:paddingLeft="3dp"
+        android:text="vélos"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bikes"
+        android:layout_alignBottom="@+id/bikes"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:paddingRight="15dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>
